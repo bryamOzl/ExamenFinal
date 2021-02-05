@@ -20,7 +20,7 @@ public class Cuenta implements Serializable{
 	@Column(name= "numero_cuenta")
 	private String numeroCuenta;
 	private String cedula;
-	private String Nombre;
+	private String nombre;
 	private double saldo;
 	public int getCuentaId() {
 		return cuentaId;
@@ -41,10 +41,10 @@ public class Cuenta implements Serializable{
 		this.cedula = cedula;
 	}
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 	public double getSaldo() {
 		return saldo;
@@ -55,7 +55,7 @@ public class Cuenta implements Serializable{
 	@Override
 	public String toString() {
 		return "Cuenta [cuentaId=" + cuentaId + ", numeroCuenta=" + numeroCuenta + ", cedula=" + cedula + ", Nombre="
-				+ Nombre + ", saldo=" + saldo + "]";
+				+ nombre + ", saldo=" + saldo + "]";
 	}
 	
 }
